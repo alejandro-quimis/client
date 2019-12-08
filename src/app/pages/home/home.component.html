@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="mt-4">
+        <div class="card-columns">
+            <div *ngFor="let item of services" class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.name}}</h5>
+                    <p>{{item.companyInfo}}</p>
+                    <p class="card-text">{{item.practiceArea}}</p>
+                    <a [routerLink]='"detail/"+item.employeeId' class="btn btn-primary">Ver Detalle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
